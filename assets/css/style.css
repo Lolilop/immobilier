@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+h1,h2,h3,h4,p,div,li,label,input,button,a{
+	font-family: "Poppins", sans-serif;
+}
+p{
+	margin-bottom: 1rem;
+}
+ul{
+	list-style: none;
+}
+a{
+	display: block;
+	font-weight: 600;
+	color: var(--primary);
+	text-decoration: none;
+}
+.active-link{
+	border-bottom:3px solid var(--primary);
+}
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.container{
+	width: 90%;
+	margin:0 auto;
+}
+.flex{
+	display: flex;
+}
+.justify-between{
+	justify-content: space-between;
+}
+.justify-center{
+	justify-content: center;
+}
+.justify-start{
+	justify-content: flex-start;
+}
+.justify-end{
+	justify-content: flex-end;
+}
+.align-center{
+	align-items: center;
+}
+.align-end{
+	align-items: flex-end;
+}
+.align-stretch{
+	align-items: stretch;
+}
+.text-center{
+	text-align: center;
+}
+.w-30{
+	width: 30%;
+}
+.w-45{
+	width: 45%;
+}
+.w-60{
+	width: 60%;
+}
+i.fa-solid{
+	display: inline-block;
+}
+.rotate-icon{
+	transform-origin: center center;
+	transform: rotate(-90deg);
+}
+.error-message{
+	color: #AA0000;
+}
+#success-message{
+	color:#00AA00;
+}
+/*************************navigation column*************************/
+.navigation-menu-column{
+	background-color: #3D3892;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.navigation-menu-wrapper{
+	height: 100vh;
+}
+.navigation-links .navigation-link a{
+	font-size: 1rem;
+	font-weight: 400;
+	color: #fff;
+	padding:1.5rem 1rem 1.5rem 3.5rem;
+}
+.navigation-links .navigation-link a:hover{
+	background-color: rgba(255, 255, 255, 0.04);
+}
+.site-logo-wrapper a{
+	color:#fff;
+	padding: 2.5rem 1rem 2.5rem 3.5rem;
+}
+.menu-sidebar-toggle-icon{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 70px;
+	height: 60px;
+	padding: 15px;
+	transition: transform .5s ease;
+	cursor: pointer;
+	z-index: 150;
+}
+.menu-sidebar-toggle-icon{
+	flex-direction: column;
+}
+.menu-sidebar-toggle-icon .icon-bar{
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+}
+.toggle-menu-btn-position{
+	right: 0;
+	left: auto;
+}
+.sub-navigation-menu{
+	display: none;
+}
+.sub-navigation-link-activated{
+	background-color: #443EA2;
+}
+
+/******************FORMS********************/
+.form-title{
+	margin-bottom: 3rem;
+}
+input[type="text"],input[type="email"],input[type="password"],input[type="search"],select,label{
+	display: block;
+}
+input[type="text"],input[type="email"],input[type="password"],input[type="search"],select,textarea{
+	width: 100%;
+	background-color: #E6E6E6;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	padding: .75rem 2rem;
+	margin:.25rem 0 1rem;
+	border-radius: 50px;
+	border:none;
+	outline: none;
+}
+input[type="radio"]{
+	margin:0 .5rem;
+}
+.error-input{
+	border: 1px solid #AA0000 !important;
+}
+.input-padding-left{
+	padding-left: 4rem !important;
+}
+.input-wrapper{
+	position: relative;
+}
+.input-icon{
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+}
+.input-row{
+	margin:2rem 0;
+}
+.input-radio-row{
+	margin:.5rem 0;
+}
+.input-row input{
+	margin:0;
+}
+.input-row-column:first-child{
+	width: 15%;
+}
+.input-row-column:last-child{
+	width: 80%;
+}
+.input-row .input-row-column .input-row-column-label,label{
+	font-weight: 600;
+	color:#555555;
+}
+.form-text,.form-link{
+	font-size: 14px;
+	font-weight: 300;
+	color:#000;
+}
+.form-link:hover{
+	color:#57B846;
+	transition: all .5s ease;
+}
+.login-button,.register-button,.cancel-button{
+	display: block;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	margin: 2rem 0;
+	padding: .75rem 0;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.login-button{
+	background-color: #57B846;
+	width: 100%;
+}
+.register-button,.cancel-button{
+	width: 30%;
+}
+.register-button{
+	background-color: #57B846;
+}
+.cancel-button{
+	background-color: #FF4B5A ;
+}
+.login-form-column .login-form-img{
+	width: 100%;
+}
+/***************PAGES**************/
+.page-columns .navigation-menu-column{
+	width: 20%;
+}
+.page-columns .main-column{
+	width: 80%;
+	min-height: 100vh;
+	background-color: #C050C6;
+	padding: 2rem;
+}
+/**************SIGNIN SIGNUP FORMS***************/
+.page-columns .main-column .login-form-columns{
+	min-height: 100vh;
+	background-color: #fff;
+	border-radius: 20px;
+
+}
+.page-columns .main-column .login-form-columns .login-form-column{
+	width: 50%;
+	padding: 1rem 6rem;
+}
+
+.page-columns .main-column .registration-form-wrapper{
+	min-height: 100vh;
+
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 3rem;
+}
+@media only screen and (max-width: 992px){
+	.page-columns .main-column{
+		min-height: auto;
+	}
+	.page-columns .navigation-menu-column{
+		overflow-y: visible;
+	}
+	.page-columns .navigation-menu-column{
+		position: fixed;
+		top: 0;
+		left: 0;
+		transform: translateX(-100%);
+		transition: transform .5s ease;
+		width: 100%;
+		z-index: 100;
+	}
+	.page-columns .toggle-navigation-menu{
+		transform: translateX(0%);
+	}
+	.page-columns .main-column{
+		width: 100%;
+
+	}
+	.page-columns .main-column .login-form-columns{
+		flex-direction: column;
+		height: auto;
+	}
+	.page-columns .main-column .login-form-columns .login-form-column{
+		width: 100%;
+		padding: 1rem 2rem;
+	}
+	.page-columns .main-column .login-form-columns .login-form-column .login-form-img{
+		width: 60%;
+		margin:0 auto;
+	}
+	.menu-sidebar-toggle-icon{
+		display: flex;
+	}
+	.icon-bar{
+		transform: rotate(0);
+		transition: transform .5s ease;
+	}
+	.icon-bar-1{
+		transform-origin: top left;
+	}
+	.icon-bar-3{
+		transform-origin: bottom left;
+	}
+	.rotate-icon-bar-1{
+		
+		transform: rotate(45deg);
+	}
+	.rotate-icon-bar-3{
+		
+		transform: rotate(-45deg);
+	}
+}
+
+@media only screen and (max-width: 680px){
+	.input-row{
+		flex-direction: column;
+	}
+	.input-row .input-row-column{
+		flex-direction: column;
+		width: 100% !important;
+		margin: .5rem 0;
+	}
+	.input-row .input-row-column .input-row-inner-column{
+		width: 100%;
+		margin: .5rem 0;
+	}
+	.cancel-button,.register-button{
+		width: 100%;
+	}
+	
+}
